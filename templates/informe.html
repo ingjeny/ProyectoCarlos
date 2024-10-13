@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Análisis de Precios</title>
+</head>
+<body>
+    <h1>Informe de Análisis de Precios de Viviendas</h1>
+    <h2>Distribución de Precios</h2>
+    <img src="{{ url_for('static', filename='price_distribution.png') }}" alt="Distribución de Precios">
+    
+    <h2>Estadísticas Descriptivas</h2>
+    <div>{{ resultado | safe }}</div>
+</body>
+</html>
